@@ -67,7 +67,7 @@ if jenis_dokumen == "Surat Peringatan":
 elif jenis_dokumen == "Surat Penawaran Harga":
     st.header("📌 Formulir Surat Penawaran Harga")
     with st.form("form_penawaran"):
-        no_surat = st.text_input("No. Surat", value="001/PH/2025")
+        no_surat = st.text_input("No. Surat", value="[Surat ke-]/01/003/[Bulan(Romawi)]/2025/ADM/SPH	")
         nama_perusahaan = st.text_input("Nama Perusahaan Tujuan")
         lokasi_perusahaan = st.text_input("Lokasi Perusahaan")
         nama_up = st.text_input("Nama UP / Contact Person")
