@@ -34,7 +34,7 @@ if jenis_dokumen == "Surat Peringatan":
         tanggal_surat = st.date_input("Tanggal", value=date.today())
         nama_saksi = st.text_input("Nama Saksi")
         jabatan_saksi = st.text_input("Jabatan Saksi")
-        generate = st.form_submit_button("Preview Surat")
+        generate = st.form_submit_button("Buat Surat")
 
     if generate:
         doc = DocxTemplate(os.path.join(TEMPLATE_DIR, "FORM_SP_template.docx"))
@@ -72,7 +72,7 @@ elif jenis_dokumen == "Surat Penawaran Harga":
         lokasi_perusahaan = st.text_input("Lokasi Perusahaan")
         nama_up = st.text_input("Nama UP / Contact Person")
         tanggal_surat = st.date_input("Tanggal Surat", value=date.today())
-        generate = st.form_submit_button("Preview Surat")
+        generate = st.form_submit_button("Buat Surat")
 
     if generate:
         doc = DocxTemplate(os.path.join(TEMPLATE_DIR, "template_surat_penawaran_harga.docx"))
