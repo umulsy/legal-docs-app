@@ -10,7 +10,7 @@ OUTPUT_DIR = "generated_docs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 st.set_page_config(layout="centered")
-st.title("📄 Aplikasi Legal Document Generator")
+st.title("📄 Aplikasi Pembuat Dokumen Otomatis")
 
 # =========================
 # PILIH TEMPLATE DOKUMEN
